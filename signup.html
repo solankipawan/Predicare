@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Signup</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+	background-image: url("1.png");
+}
+* {box-sizing: border-box}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #fff;
+  margin-bottom: 25px;
+}
+h1{
+color :white;
+}
+
+p{
+color :white;
+}
+
+
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+.fbbtn{
+padding : 10px 10px;
+background-color:#4267b2;
+}
+.tweetbtn{
+padding : 10px 10px;
+background-color: #38A1F3;
+}
+
+.googlebtn{
+padding : 10px 10px;
+background-color: #DD4B39;
+}
+/
+.cancelbtn, .signupbtn ,fbbtn,tweetbtn,googlebtn{
+  float: left;
+  width: 50%;
+}
+
+
+.container {
+  padding: 10px;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container{
+    top: 110%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+	background: #11998e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body  align="rightwards" class="one">
+
+<form action="/action_page.php" style="border:1px solid #ccc">
+
+  <div class="container" border: 5px solid red;>
+  
+  <header>
+    <h1>Sign Up</h1>
+    <p>Enter details to create an account.</p>
+    <hr>
+	</header>
+      <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Your Name" name="name" required>
+    <label for="age"><b>Age</b></label>
+    <input type="text" placeholder="Enter Your Age" name="ages" required>
+    <label for="gen"><b>Gender</b></label>
+    
+    
+    <input id="rd1" type="radio" name="grp1" value="option1">Male</input>
+
+<input id="rd2" type="radio" name="grp1" value="option2">Female</input>
+
+<input id="rd3" type="radio" name="grp1" value="option3">Others</input>
+<br>
+<br>
+
+
+    <label for="email"><b>Email ID</b></label>
+    <input type="text" placeholder="Enter Your Email ID" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    
+   
+
+    <label for="psw-repeat"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+     <label for="Contact"><b>Contact No.</b></label>
+    <input type="text" placeholder="Enter Contact Number" name="cont" required>
+      <label for="aadhar"><b>Aadhar No.</b></label>
+    <input type="text" placeholder="Enter Aadhar Number" name="aad" required>
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember Me
+    </label>
+    
+    <p>By creating an account you agree to our <a href="terms.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <a href="login.html"><button type="button" class="cancelbtn">Cancel</button></a>
+      <a href="login.html"><button type="submit" class="signupbtn">Sign Up</button></a>
+    </div>
+	
+  <h1 class="w3-padding-32 w3-red w3-circle w3-center" align="center">Or Signup Using</h1>
+
+  <div class ="one">
+  <a href="https://www.facebook.com/login/"><button type="button" class="fbbtn">Facebook</button></a>
+      <a href="https://twitter.com/login"><button type="button" class="tweetbtn">Twitter</button></a>
+	<a href="https://accounts.google.com/servicelogin"><button type="button" class="googlebtn">google+</button></a>
+      
+</div> 
+  </div>
+  
+
+</form>
+
+</body>
+</html>

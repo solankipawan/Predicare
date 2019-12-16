@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="keywords" content="webpage,html elements,some text"/>
+<style type=text/css>
+</style>
+<script type="text/javascript">
+</script>
+</head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+#h{
+background-color: #ddd;
+  outline: none;
+cursor: pointer;
+   width: 100%;
+   opacity: 0.7;
+    padding: 14px 20px;
+}
+#ju{
+background-color: #ddd;
+  outline: none;
+cursor: pointer;
+   width: 100%;
+   opacity: 0.7;
+    padding: 14px 20px;
+}
+#ji{
+background-color: #ddd;
+  outline: none;
+cursor: pointer;
+   width: 100%;
+   opacity: 0.7;
+    padding: 14px 20px;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  
+}
+
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+
+.container {
+  padding: 16px;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+
+<form action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <h1>Enter Details</h1>
+    <p>Fill the form and upload required Documents!</p>
+    <hr>
+      <label for="name"><b>Select Disease</b></label>
+      <br><br>
+    <select id="h">
+    <option>Malaria</option>
+    <option>Dengue</option>
+    <option>ChickenGuniya</option>
+    <option>Typhoid</option>
+    <option>Cholera</option>
+    <option>Tuberculosis</option>
+    <option>Common Cold</option>
+    <option>Other Viral Infections</option>
+    </select><br><br>
+    <label for="age"><b>Consultant Doctor ID
+    <input type="text" placeholder="Enter ID" required>
+    <label for="gen"><b>Select Stage
+    
+    
+    <input id="rd1" type="radio" name="grp1" value="option1">Initial Stage</input>
+
+<input id="rd2" type="radio" name="grp1" value="option2">Secondary Stage</input>
+
+<input id="rd3" type="radio" name="grp1" value="option3">Last Stage</input>
+<br>
+<br>
+ <label  for="hel"><b>Upload Report from a Certified Laboratory/Doctor:</label>
+ <br>
+ <br>
+<form action="index.php" method="post" encttype="multipart/form-data">
+<label for="file">Choose a file:</label>
+<input id="ji"type="file" name="file1"/><br><br>
+<input type="submit" value="Upload!">
+</form>
+<br>
+<br>
+
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Are the above details correct!
+    </label>
+    
+    <p>By Submitting the above details,you abide by our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Submit</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+.three{
+    background: #c94b4b;  background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);  
+background: linear-gradient(to right, #4b134f, #c94b4b); 
+
+}
+
+.img{
+  border: 8px solid #B048B5;
+  border-radius: 13px;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+}
+.myTable { 
+  width: 30%;
+  text-align: center;
+  background-color: lemonchiffon;
+  border-collapse: collapse; 
+  font-family: 'Turret Road', cursive;
+    margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  }
+
+.myTable th { 
+  background-color: goldenrod;
+  color: white; 
+  }
+
+.myTable td, 
+.myTable th { 
+  padding: 10px;
+  border: 1px solid goldenrod; 
+  }
+  .one{
+      text-align:center;
+     font-family: 'PT Serif', serif;
+      font-size: 40px;
+      font-weight: bold;
+color:white;
+  }
+  .two{
+  text-align: center;
+ font-family: 'PT Serif', serif;
+  font-size: 25px;
+font-weight: bold;
+color:white;
+}

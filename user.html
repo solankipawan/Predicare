@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="keywords" content="webpage,html elements,some text"/>
+<style type=text/css>
+</style>
+<script type="text/javascript">
+</script>
+</head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+background-image: url("doc.jpg");
+
+height:100%;
+width:100%;
+}
+* {box-sizing: border-box}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+#h{
+background-color: #ddd;
+  outline: none;
+cursor: pointer;
+   width: 100%;
+   opacity: 0.7;
+    padding: 14px 20px;
+}
+#u
+{
+    background-color: #ddd;
+  outline: none;
+cursor: pointer;
+   width: 100%;
+   opacity: 0.7;
+    padding: 14px 20px;
+
+}
+#ju{
+background-color: #ddd;
+  outline: none;
+cursor: pointer;
+   width: 100%;
+   opacity: 0.7;
+    padding: 14px 20px;
+}
+#ji{
+background-color: #ddd;
+  outline: none;
+cursor: pointer;
+   width: 100%;
+   opacity: 0.7;
+    padding: 14px 20px;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  
+}
+
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+#mid
+{
+  text-align:center
+}
+
+/
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+
+.container {
+  padding: 16px;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.min.js"></script>
+
+<script type="text/javascript" src="check.js">
+
+</script>
+<body>
+
+<form  style="border:1px solid #ccc"  onsubmit="validate()">
+  <div class="container">
+  <div id="aboutus"></div>
+    <h1>Find Your Way!</h1>
+    <p>Choose a location where to check Health Risk!</p>
+    <hr>
+      <label for="name"><b>Choose a Location:</b></label>
+      
+      <br><br>
+    <select id="h" required>
+    
+    <option>-None-</option>
+    <option>My Location</option>
+    <option>Majra Chaukdi</option>
+    <option>Chiloda Circle</option>
+    <option>Himmatnagar</option>
+    <option>Prantij</option>
+    <option>Pathika Ashram</option>
+    <option>Vastrapur</option>
+    <option>Tajpur</option>
+    </select><br><br>
+    <p id="mid"><b>OR<b></p>
+    <label for="age"><b>Your Current Health Status</label>
+   <br>
+      <button type="text" class="signupbtn">Fit</button>
+    <label for="age"><b>Update Your Health Status</label><br>
+     <select id="u" required>
+    <option>Fit</option>
+    <option>Influenced</option>
+    
+    </select>
+    <br><br>
+    <label>
+
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Are You sure, you want to go ahead!
+    </label>
+    
+    <p>By Submitting the above details,you abide by our <a href="terms.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Submit</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
